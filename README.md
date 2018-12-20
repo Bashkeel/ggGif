@@ -1,7 +1,7 @@
 # Gorillaz, GIFs, and ggplot2
-###### Analyzing Valence (song positivity) of Gorillaz discography
+### Analyzing Valence (song positivity) of Gorillaz discography
 
-![](Images/Gorillaz Valence Plot.gif)
+<img src="Images/Gorillaz Valence Plot.gif">
 <br> <br>
 
 I stumbled upon a great
@@ -13,7 +13,7 @@ positivity of each track.
 Gorillaz is a British virtual band created by musician Damon Albarn and artist Jamie Hewlett. The band consists of four animated members:
 
 *Murdoc Niccals, Russel Hobbs, Noodle, and 2-D*
-![](/img/Gorillaz/Gorillaz%20All%20Members.gif)
+<img src="Images/Gorillaz All Members.gif">
 
 To get the data regarding the valence (song positivity), I used
 [`spotifyr`](https://www.rcharlie.com/post/spotifyr/) to pull the [audio
@@ -135,8 +135,7 @@ date. This will serve as the background of our GIF project.
       theme(plot.title = element_text(face = 'bold', size = 14, hjust = 0),
             plot.subtitle = element_text(size = 10, hjust = 0))
 
-
-![](/Images/Gorillaz plot.png)
+<img src="Images/Gorillaz Plot.png">
 
 
 Now let's load the gif using the
@@ -150,8 +149,7 @@ frames were not stacked.
     plot_gif <- image_scale(plot_gif, "250")
     plot_gif
 
-![](/Images/Gorillaz Gif.gif)
-
+<img src="Images/Gorillaz Gif.gif">
 
 Since the number of frames for the gif was so low, I looped the gif 10
 times `looped gif`. I then added the gif frame by frame with
@@ -173,4 +171,4 @@ infinite looping.
 
     image_animate(image_join(frames), fps = 10, loop = 0)
 
-![](Images/Gorillaz Valence Plot.gif)
+<img src="Images/Gorillaz Valence Plot.gif">
